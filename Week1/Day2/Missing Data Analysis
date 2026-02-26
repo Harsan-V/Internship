@@ -1,1 +1,92 @@
+Types of Missing Values
+
+
+
+
+MCAR-Missing Completely At Random:
+
+Data is considered Missing Completely At Random (MCAR) if the probability of a data point being missing is unrelated to either the observed data or the missing data itself. In other words, there is no discernible pattern or reason behind the missingness. I​​t went missing for no reason at all.
+
+Example:
+A survey where a random glitch in the system causes some responses to be lost, regardless of the respondent's answers or characteristics. During data entry, a technician accidentally skips random entries without any bias.
+
+Teacher wrote everyone’s marks on paper.
+The wind blew and some papers flew away.
+The missing marks have NOTHING to do with:
+Student
+Age
+Marks
+Anything
+
+Why & How it Occurs?
+MCAR often occurs due to random, external factors such as:
+Technical errors in data collection (e.g., random network failures).
+Random accidents during manual data entry.
+How to Solve?
+If data is MCAR, the missingness is truly random, and analysis is less biased. Common approaches include:
+Deletion Methods: Remove rows or columns with missing data if the proportion of missingness is low.
+Example: If only 1-2% of data points are missing, deletion might be acceptable.
+Imputation Techniques:
+Use simple imputation methods like mean, median, or mode.
+Advanced methods: Predict the missing values using regression or machine learning models trained on the observed data.
+Multiple Imputation: Generate several plausible datasets by imputing missing values multiple times, analyze each dataset, and combine results for robustness.
+This Type of Error Happens very less often.
+
+MAR-Missing At Random:
+Data is Missing At Random (MAR) when the probability of missingness depends on the observed data but not on the missing data itself. In simpler terms, the missingness is systematic and can be explained by other variables in the dataset. It’s missing because of some other information.
+
+Example:
+In a salary dataset:
+Younger people are less likely to report salary.
+Missing salary depends on age.
+Salary isn’t randomly missing. It depends on another feature.
+
+Why & How it Occurs?
+
+MAR typically arises due to relationships between observed variables and missingness:
+Certain subgroups or patterns influence the likelihood of missing data.
+Respondent behaviors or preferences are influenced by factors measured in the dataset.
+
+How to Solve?
+
+Handling MAR requires understanding the relationships between variables:
+Imputation Techniques:
+Use conditional imputation based on observed variables. For example, impute income based on age, education, and occupation.
+K-Nearest Neighbors (KNN): Impute missing values based on the most similar observations in the dataset.
+Regression Imputation: Use regression models to predict missing values based on correlated observed variables.
+Multiple Imputation: Generate multiple datasets using MAR assumptions, then analyze and pool results.
+Inverse Probability Weighting: Adjust the weights of observations during analysis to account for the likelihood of missingness.
+Most real-world datasets fall into MAR.
+
+MNAR-Missing Not At Random 
+
+Data is Missing Not At Random (MNAR) when the missingness depends on the value of the missing data itself. This introduces bias because the missing values are systematically different from the observed values.
+Example:
+High earners may be less likely to disclose their income, leading to an underrepresentation of high-income data.
+Patients experiencing severe side effects might drop out of a clinical trial, causing the dataset to miss critical information.
+ Its hidden bias.
+
+Why & How it Occurs?
+MNAR arises due to:
+Self-selection bias: Respondents intentionally omit sensitive or stigmatized information.
+Behavioral biases or decisions influenced by the missing data.
+
+
+How to Solve?
+MNAR is the most challenging type to handle because the missingness cannot be explained by observed data alone:
+Model-Based Approaches:
+Use advanced statistical models to estimate and handle MNAR patterns. For example, mixed models or joint modeling approaches.
+Sensitivity Analysis:
+Test various scenarios and assumptions about the missing data to understand its impact on results.
+Data Collection Improvements:
+Attempt to reduce MNAR by redesigning data collection processes, such as anonymizing surveys or incentivizing responses.
+Pattern Analysis:
+Investigate patterns in missingness to hypothesize and test potential reasons for MNAR.
+ 
+
+
+
+
+
+
 
