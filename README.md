@@ -1,2 +1,2 @@
 # Internship
-This repository shows my internship progress from day1
+This repository shows my internship progress starting from first to end
