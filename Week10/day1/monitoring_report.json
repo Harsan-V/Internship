@@ -1,0 +1,8 @@
+{
+    "model_name": "House Price Prediction Model",
+    "accuracy_percent": 94.3,
+    "mean_absolute_error": 42693.87,
+    "root_mean_squared_error": 54406.94,
+    "model_file": "HousePred.joblib",
+    "status": "Working"
+}
