@@ -1,0 +1,4 @@
+ALERT: OverallQual drift detected (KS p-value=0.0, PSI=2.1873).
+ALERT: GrLivArea drift detected (KS p-value=0.0, PSI=0.2939).
+ALERT: LotArea drift detected (KS p-value=0.0, PSI=0.2433).
+ALERT: TotRmsAbvGrd drift detected (KS p-value=0.038418, PSI=0.0168).
