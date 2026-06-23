@@ -1,0 +1,2 @@
+check,reference_average_churn_probability,production_average_churn_probability,ks_statistic,ks_p_value,psi,psi_status,ks_status
+prediction_probability_drift,0.44090614613147605,0.6214721612923104,0.3397142857142857,1.7391153619754654e-215,0.7550328522970172,Strong drift,Possible drift

@@ -1,0 +1,3 @@
+Numeric drift alert: Age | PSI=1.348 | KS p-value=0.0000
+Numeric drift alert: Balance | PSI=0.726 | KS p-value=0.0000
+Numeric drift alert: EstimatedSalary | PSI=0.840 | KS p-value=0.0000

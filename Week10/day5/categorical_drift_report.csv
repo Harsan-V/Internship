@@ -1,0 +1,3 @@
+feature,type,chi2_statistic,chi2_p_value,status
+Geography,categorical,232.30694654245298,3.59076930801752e-51,Possible drift
+Gender,categorical,3.9940518637937568,0.04566113557917215,Possible drift
